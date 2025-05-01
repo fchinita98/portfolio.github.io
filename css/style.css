@@ -1,0 +1,605 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-clr: #2ec4b6;
+    --body-clr: #ffffff;
+    --bg-clr: #011627;
+    --font-family: 'SpaceCrusaders';
+    --font-body: 'IBM Plex Sans';
+}
+
+@font-face {
+    font-family: 'SpaceCrusaders';
+    src: url(../fonts/SpaceCrusaders-x3DP0.ttf) format('truetype');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    background-image: url(../img/ChatGPT\ Image\ 13_04_2025\,\ 11_32_47.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    margin: 16px;
+}
+
+header {    
+    background-color: #2EC4B6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 1rem;
+    font-family: var(--font-body);
+}
+
+form {
+    font-size: 2rem;
+}
+
+button {
+    font-size: 2rem;
+}
+
+#logo {
+    font-family: var(--font-family);
+    color: var(--primary-clr);
+    -webkit-text-stroke: 1px var(--bg-clr);
+    font-size: 3rem ;
+}
+
+nav {
+    padding: 1rem;
+    font-weight: 700;
+}
+
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 0.75rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--bg-clr);
+    font-family: var(--font-body);
+    font-size: 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    font-family: 'SpaceCrusaders', sans-serif;
+    font-size: 1.5rem;
+    min-height: 100vh;
+    padding: 55px 16px;
+}
+
+#main-img {
+    width: 50%;
+    height: auto;
+}
+
+#fullstack-dev {
+    color: #2EC4B6;
+}
+
+.about {
+    color: var(--body-clr);
+    font-family: var(--font-body);
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 0;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    min-height: 100vh;
+}
+
+#about-img {
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+}
+
+.about-content {
+    font-family: var(--font-body);
+    margin: 20px;
+}
+
+#about-heading {
+    font-family: var(--font-family);
+    background-color: var(--primary-clr);
+    padding: 16px;
+}
+
+.subtitle-text {
+    font-weight: 700;
+}
+
+#education-heading {
+    font-family: var(--font-family);
+    background-color: var(--primary-clr);
+    padding: 16px;
+    margin-bottom: 32px;
+}
+
+.education {
+    color: var(--body-clr);
+    font-family: var(--font-body);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+    min-height: 100vh;
+}
+
+.education-wrapper {
+    padding: 45px 16px;
+}
+
+.education1 {
+    border: 2px solid var(--primary-clr);
+    border-radius: 15px;
+    padding: 50px 8px;
+    text-align: center;
+    background-color: var(--bg-clr);
+}
+
+.education2 {
+    border: 2px solid var(--primary-clr);
+    border-radius: 15px;
+    padding: 50px 8px;
+    text-align: center;
+    background-color: var(--bg-clr);
+}
+
+.education3 {
+    border: 2px solid var(--primary-clr);
+    border-radius: 15px;
+    padding: 50px 8px;
+    text-align: center;
+    background-color: var(--bg-clr);
+}
+
+.education-years {
+    color: var(--primary-clr);
+    font-weight: 700;
+}
+
+#skills-heading {
+    font-family: var(--font-family);
+    background-color: var(--primary-clr);
+    padding: 16px;
+    margin-bottom: 32px;
+}
+
+.skills {
+    color: var(--body-clr);
+    font-size: 10px;
+    font-family: var(--font-body);
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 0;
+    border-radius: 5px;
+}
+
+.skills-wrapper {
+    display: grid;
+    grid-template-areas: 
+    "html css" 
+    "javascript adobeps"
+    "adobepr figma"
+    "canva unlocking1"
+    "unlocking2 unlocking3";
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    gap: 1rem;
+}
+
+.skills article img {
+    width: 80px;
+    height: auto;
+}
+
+.skills article p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#html {
+    grid-area: html;
+}
+
+#css {
+    grid-area: css;
+}
+
+#javascript {
+    grid-area: javascript;
+}
+
+#adobe-ps {
+    grid-area: adobeps;
+}
+
+#adobe-pr {
+    grid-area: adobepr;
+}
+
+#figma {
+    grid-area: figma;
+}
+
+#canva {
+    grid-area: canva;
+}
+
+#unlocking1 {
+    grid-area: unlocking1;
+}
+
+#unlocking2 {
+    grid-area: unlocking2;
+}
+
+#unlocking3 {
+    grid-area: unlocking3;
+}
+
+#html-img {
+    width: 100px;
+}
+
+#figma-img {
+    width: 50px;
+}
+
+#contact-heading {
+    font-family: var(--font-family);
+    background-color: var(--primary-clr);
+    padding: 16px;
+    margin-bottom: 32px;
+}
+
+.contact {
+    color: var(--body-clr);
+    font-family: var(--font-body);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+    min-height: 100vh;
+}
+
+form input, form textarea {
+    border: 4px solid var(--primary-clr);
+    border-radius: 8px;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    line-height: 80px;
+}
+
+form button {
+    background-color: var(--primary-clr);
+    color: var(--body-clr);
+    border: 4px solid var(--body-clr);
+    border-radius: 8px;
+    width: 100%;
+    height: 50px;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+form {
+    width: 100%;    
+    max-width: 1200px;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 2px solid var(--bg-clr);
+    border-radius: 8px;
+    background-color: var(--bg-clr);
+    padding: 100px 16px;
+}
+
+::placeholder {
+    text-align: center;
+    line-height: 50px;
+}
+
+.social-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 20px;
+}
+
+.contact img {
+    width: 40px;
+}
+
+#footer-cr {
+    font-family: var(--font-body);
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--primary-clr);
+    padding: 100px 10px;
+    color: var(--body-clr);
+}
+
+#footer-phrase {
+    font-family: var(--font-family);
+    font-size: 20px;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+}
+
+.arrow-container {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+#top-arrow {
+    width: 55px;
+    height: auto;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#top-arrow:hover {
+    opacity: 3;
+}
+
+
+#scroll-arrow {
+    position: fixed;
+    bottom: 20px;
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#scroll-arrow:hover {
+    opacity: 3;
+}
+
+@media (min-width: 700px) {
+    header {
+        background-color: #2EC4B6;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+        font-family: var(--font-body);
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 1.2rem;
+    }
+    
+    a {
+        text-decoration: none;
+        color: var(--bg-clr);
+        font-family: var(--font-body);
+        font-size: 1rem;
+    }
+
+    #logo {
+        font-size: 3.5rem;
+    }
+
+    main {
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 2rem;
+        font-family: 'SpaceCrusaders', sans-serif;
+        font-size: 2rem;
+        height: 100vh;
+    }
+
+    #main-img {
+        width: 35%;
+        height: auto;
+    }
+
+    .about-content {
+        font-family: var(--font-body);
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;
+    }
+
+    #about-img {
+        margin-top: 40px;
+        width: 50%;
+        height: auto;
+    }
+
+    .skills-wrapper {
+        display: grid;
+        grid-template-areas: 
+        "html css javascript adobeps adobepr"
+        "figma canva unlocking1 unlocking2 unlocking3";
+        align-items: center;
+        justify-content: space-around;
+        justify-items: center;
+        gap: 3rem;
+        padding-top: 100px;
+    }
+}
+
+@media (min-width: 1280px) {
+    header {
+        background-color: #2EC4B6;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 56px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 1.8rem;
+        font-family: var(--font-body);
+    }
+
+    #logo {
+        font-size: 4rem;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 1.3rem;
+    }
+    
+    a {
+        text-decoration: none;
+        color: var(--bg-clr);
+        font-family: var(--font-body);
+        font-size: 1.8rem;
+    }
+
+    main {
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 2rem;
+        font-family: 'SpaceCrusaders', sans-serif;
+        font-size: 2rem;
+        height: 100vh;
+    }
+
+    #main-img {
+        width: 35%;
+        height: auto;
+    }
+
+    .about-content {
+        font-family: var(--font-body);
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;
+    }
+
+    #about-img {
+        margin-top: 40px;
+        width: 50%;
+        height: auto;
+    }
+
+
+    .skills-wrapper {
+        display: grid;
+        grid-template-areas: 
+        "html css javascript adobeps adobepr"
+        "figma canva unlocking1 unlocking2 unlocking3";
+        align-items: center;
+        justify-content: space-around;
+        justify-items: center;
+        gap: 3rem;
+        padding-top: 100px;
+    }
+
+    #top-arrow {
+        width: 88px;
+        height: auto;
+        cursor: pointer;
+        opacity: 0.7;
+    }
+    
+    #scroll-arrow {
+        position: fixed;
+        bottom: 20px;
+        width: 80px;
+        height: auto;
+        cursor: pointer;
+        opacity: 0.7;
+    }
+}
